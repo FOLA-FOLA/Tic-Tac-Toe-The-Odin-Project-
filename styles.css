@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box;
+    background-color: rgb(18, 0, 51);
+    font-family: 'Open Sans', 'Helvetica Neue', system-ui,'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+}
+.introtext {
+    text-align: center;
+    color: azure;
+}
+#gameform {
+    width: 45%;
+    padding: 2rem;
+    background-color: white;
+    color: black;
+    align-self: center;
+    margin: 0%;
+}
+fieldset {
+    padding: 0%;
+    margin: 0%;
+    border: none;
+}
+legend {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0%;
+    margin-bottom: 2rem;
+}
+input {
+    display: block;
+    padding: 0.4rem;
+    margin-left: 0%;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+label {
+    margin: 0%
+}
+button {
+    padding: 1rem;
+    background-color: rgb(18, 0, 51);
+    color: white;
+    border: none;
+}
+.hidden {
+    display: none;
+}
+.tttboard {
+    display: grid;
+    grid-template: repeat(3, 33%) / repeat(3, 33%);
+    height: 70rem;
+    width: 70rem;
+}
+.tttboard > div {
+
+}

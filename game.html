@@ -4,25 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe Game</title>
-    <link href="./styles.css" rel="stylesheet">
+    <link href="./styles.css" re="stylesheet">
 </head>
 <body>
-    <div class="introtext">
+    <div>
         <h2>WELCOME TO</h2>
         <H1>TIC TAC TOE</H1>
-        <p class="hidden" id="instruction">Player X always goes first</p>
+        <p class="hidden">Player X always goes first</p>
     </div>
-    <form id="gameform">
-        <fieldset>
-            <legend>Input Your Name Here</legend>
-            <label for="playerx">Player X</label>
-            <input id="playerx" name="playerxname" type="text" placeholder="Kemi">
-            <label for="playero">Player O</label>
-            <input id="playero" name="playeroname" type="text" placeholder="Femi">
-        </fieldset>
-        <button type="submit" id="formsubmitbtn">Enter Game</button>
-    </form> 
-    <div id="gamebody" class="hidden">
+    <div id="gamebody">
         <div class="tttboard" id="tttboard">
             <div class="slot1" id="slot1"></div>
             <div class="slot2" id="slot2"></div>
@@ -34,8 +24,7 @@
             <div class="slot8" id="slot8"></div>
             <div class="slot9" id="slot9"></div>
         </div>
-    </div>
-    <div id="nextplayer"></div> 
+    </div>    
     <script src="./script.js"></script>
 </body>
 </html>
