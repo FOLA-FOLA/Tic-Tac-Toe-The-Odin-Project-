@@ -20,7 +20,7 @@ function showgame() {
     instruction.classList.remove('hidden')
 }
 function hidegame() {
-    const gamebody = document.getElementsById('gamebody')
+    const gamebody = document.getElementById('gamebody')
     const instruction = document.getElementById('instruction')
     gamebody.classList.add('hidden')
     instruction.classList.add('hidden')
