@@ -45,15 +45,42 @@ button {
     color: white;
     border: none;
 }
+button:hover {
+    color: rgb(18, 0, 51);
+    background-color: white;
+    border: solid 0.1rem rgb(18, 0, 51);
+}
 .hidden {
     display: none;
 }
 .tttboard {
+    align-self: center;
     display: grid;
-    grid-template: repeat(3, 33%) / repeat(3, 33%);
-    height: 70rem;
-    width: 70rem;
+    grid-template: repeat(3, 30%) / repeat(3, 30%);
+    height: 30rem;
+    width: 30rem;
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
 }
 .tttboard > div {
-
+    background-color: rgb(155, 56, 255);;
+}
+.gameboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.winner {
+    background-color: aquamarine;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 34%;
+}
+.controls > button {
+    border: solid 0.1rem white;
 }
