@@ -42,7 +42,7 @@ function showgame() {
 //Function to hide the game board
 function hideGame() {
     const gamebody = document.getElementById('gamebody')
-    const instruction = document.getElementById('playerText')
+    const instruction = document.getElementById('playertext')
     gamebody.classList.add('hidden')
     instruction.classList.add('hidden')
     entryform.classList.remove('hidden')
@@ -52,7 +52,8 @@ formsubmitbtn.addEventListener('click', (e) => {
     e.preventDefault()
     addPlayersToLibrary()
     showgame();
-    showCurrentPlayer('X')
+    showCurrentPlayer('O')
+    entryform.reset()
 })
 
 //Function to add move to the array
@@ -130,6 +131,8 @@ tttboard.addEventListener('click', (event) => {
 const resetGame = document.getElementById('reset')
 const startPage = document.getElementById('restart')
 
+const resetgme = 
+
 resetGame.addEventListener('click', (e) => {
     const slots = document.getElementsByClassName('slot')
     allMoves.splice(0, allMoves.length)
@@ -142,4 +145,11 @@ resetGame.addEventListener('click', (e) => {
 
 startPage.addEventListener('click', (e) => {
     hideGame()
+    const slots = document.getElementsByClassName('slot')
+    allMoves.splice(0, allMoves.length)
+    Array.from(slots).forEach(slot => {
+        slot.innerHTML = '';
+        slot.style.backgroundColor = "rgb(155, 56, 255)"
+        showCurrentPlayer('O')
+    });
 })

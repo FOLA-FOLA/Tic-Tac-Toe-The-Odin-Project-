@@ -63,9 +63,6 @@ button:hover {
     justify-content: center;
     align-content: center;
 }
-.slot {
-    background-color: rgb(155, 56, 255);
-}
 .gameboard {
     display: flex;
     justify-content: center;
@@ -79,7 +76,8 @@ button:hover {
 .controls {
     display: flex;
     justify-content: space-between;
-    width: 34%;
+    width: 30%;
+    margin-top: 1rem;
 }
 .controls > button {
     border: solid 0.1rem white;
@@ -91,6 +89,13 @@ button:hover {
     font-size: 4rem;
     color: white;
     font-weight: bold;
+    background-color: rgb(155, 56, 255);
+    border-radius: 30% 60% 20% 40%;
+}
+
+.slot:hover {
+    border: solid 0.1rem white;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 }
 
 .slot p {
