@@ -34,6 +34,7 @@ function showWinner(marker) {
 function showgame() {
     const gamebody = document.getElementById('gamebody')
     const instruction = document.getElementById('playertext')
+    const entryform = document.getElementById('gameform')
     gamebody.classList.remove('hidden')
     instruction.classList.remove('hidden')
     entryform.classList.add('hidden')
@@ -43,6 +44,7 @@ function showgame() {
 function hideGame() {
     const gamebody = document.getElementById('gamebody')
     const instruction = document.getElementById('playertext')
+    const entryform = document.getElementById('gameform')
     gamebody.classList.add('hidden')
     instruction.classList.add('hidden')
     entryform.classList.remove('hidden')
@@ -145,6 +147,7 @@ resetGame.addEventListener('click', (e) => {
 
 startPage.addEventListener('click', (e) => {
     hideGame()
+    
     const slots = document.getElementsByClassName('slot')
     allMoves.splice(0, allMoves.length)
     Array.from(slots).forEach(slot => {
